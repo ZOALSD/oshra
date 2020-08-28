@@ -1,0 +1,246 @@
+html{
+    scroll-behavior:smooth;
+}
+.mt100{
+    margin-top: 100px !important;
+}
+.hero-area .hero-content h2{
+    color: #4CAF50 !important;
+}
+.clever-btn{
+    background-color: #4CAF50 !important;
+}
+.single-popular-course .course-content h4{
+    text-align: center;
+}
+.classy-nav-container{
+    background: transparent;
+}
+@media only screen and (max-width: 480px)
+{
+
+.bt-5-sm{
+    margin-bottom: 5px !important;
+}
+
+.bt-10-sm{
+    margin-bottom: 10px !important;
+}
+}
+
+
+.bg-overlay-2by5::after {
+    background-color:rgb(41 8 0 / 60%) !important
+}
+.clever-main-menu .classynav ul li a{
+    color: white !important;
+}
+.clever-main-menu .classynav ul li a.active{
+    color:#4CAF50 !important;
+}
+.clever-main-menu .classynav ul li a:hover{
+    color: #4CAF50 !important;
+    font-weight:bold
+}
+
+.breakpoint-on .classynav>ul>li>a{
+    background: transparent !important
+}
+
+.breakpoint-on .classy-navbar .classy-menu{
+    background: #676565;
+}
+.is-sticky .clever-main-menu{
+    background-color:#333333 !important
+}
+
+.classy-navbar .nav-brand{
+    color: #4CAF50 !important;
+    text-transform: uppercase;
+}
+.classy-navbar .nav-brand:hover{
+    font-weight: bold;
+}
+
+.btn-outline-warning-me{
+    color: #4CAF50;
+    background-color: transparent;
+    background-image: none;
+    border-color: #4CAF50;
+}
+.register-login-area a{
+    color: #4CAF50 !important;
+}
+.register-login-area a .btn :hover {
+
+    color: #fff !important;
+    background-color: #4CAF50 !important;
+}
+
+.register-login-area a.active, .register-login-area a:hover, .register-login-area a:focus{
+    background-color: #4CAF50 !important;
+    color: #fff !important;
+}
+
+i.fa.fa-chevron-down {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 22px;
+    color: #fff;
+    border: 1px solid #4CAF50;
+    padding: 10px;
+    border-radius: 50%;
+    transition-duration:1s;
+    cursor: pointer;
+}
+i.fa.fa-chevron-down:hover {
+  background-color: #4CAF50;
+}
+
+
+/*about section ---------------------*/
+.about {
+    padding-top:20px;
+    background-color: #ececec;
+    margin: 0;
+    box-shadow: inset 0px 1px 10px 1px #33333361;
+    color: #377844;
+}
+
+.about-title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 0 12px;
+}
+.about-content{
+    text-align: center;
+    font-size: 20px;
+    color: #4e4e4e;
+    max-width: 700px;
+    margin: auto;
+}
+/*end about section ----------------*/
+
+/*social media links*/
+.social-links {
+    max-width: 671px;
+    margin: auto;
+}
+
+.fa:hover{
+font-weight: bold;
+font-size: large;
+}
+.fa-facebook:hover{
+    color: blue;
+
+}
+.fa-instagram:hover{
+    color: #3f729b;
+
+}
+.fa-twitter:hover{
+    color: #00acee;
+}
+.fa-youtube:hover{
+    color:#ff5722
+}
+
+/**contact us social media links -----------
+section.contact-area {
+    background-color: #252525;
+    box-shadow: inset 1px -1px 5px 0px white;
+}
+*/
+.social-links_us{
+    text-align: center;
+}
+.contact--info.mt-50.mb-100 {
+    background-color: #fff;
+}
+/*footer section ---------------------*/
+a.Osa {
+    font-size: 18px;
+    color: #fff;
+}
+
+/**volunteer-------------------------* */
+.volunteer-us{
+    margin: 100px auto;
+}
+
+
+/**================================================= */
+
+input#cv_fil/*e*/{
+    border: none;
+    background-color: #4daf50;
+    width: 111px;
+    padding: 41px;
+    border-radius: 50%;
+    box-shadow: 5px 3px 10px 0px black;
+}
+.f22{
+    font-size: 22px;
+}
+/*cause conect place*/
+.course-content {
+    height: 210px !important;
+    overflow: hidden;
+}
+.single-popular-course img{
+    height: 200px;
+}
+/***=========================================================== */
+/*<div class="lds-facebook hide" id="{{$cv_file}}"><div></div><div></div><div></div><div></div></div>
+ */
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 40px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background:#49a745;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 6px;
+    height: 50px;
+  }
+  50%, 100% {
+    top: 18px;
+    height: 25px;
+  }
+}
+/**====================================================== */
+.single-popular-course{
+    margin-bottom: 15px;
+}
+/*blog paragrahp contienr **/
+.single-blog-area .blog-content p {
+    height: 150px;
+    overflow: hidden;
+}
+
+.single-blog-area img{
+    height: 300px;
+}
