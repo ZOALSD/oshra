@@ -14,7 +14,7 @@
             <div class="col-12 col-md-6">
                 <div class="single-blog-area mb-100 wow fadeInUp" data-wow-delay="250ms">
                 @if(!empty($blog->blog_img))
-                    <img src="{{ it()->url("$blog->blog_img") }}" alt="">
+                    <img src="{{ it()->url("app/public/".$blog->blog_img) }}" alt="">
                 @else
                         <img src="{{url("/front/img/bg-img/bg3.jpg")}}" alt="">
                 @endif

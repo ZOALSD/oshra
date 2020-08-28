@@ -24,7 +24,7 @@
                 <div class="col-12 col-md-6 mb-3">
                     <div class="single-popular-course wow fadeInUp" data-wow-delay="250ms">
                         @if(!empty($cause->blog_img))
-                            <img src="{{ it()->url($cause->blog_img) }}" alt="">
+                            <img src="{{ it()->url("app/public/".$cause->blog_img) }}" alt="">
                         @else
                             <img src="{{ url('/front/img/bg-img/bg1.jpg') }}">
                     @endif                             <!-- Course Content -->

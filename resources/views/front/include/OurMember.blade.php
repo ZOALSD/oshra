@@ -18,7 +18,7 @@
                         <!-- Tutor Thumbnail -->
                         <div class="tutor-thumbnail">
                             @if(!empty($m->member_image))
-                            <img src="{{ it()->url($m->member_image)}}" alt="">
+                            <img src="{{ it()->url("app/public/".$m->member_image)}}" alt="">
                             @else
                                 <img src="{{ url('') }}/front/img/bg-img/t1.png" alt="">
                             @endif
