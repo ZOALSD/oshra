@@ -49,7 +49,8 @@
         <div class="content">
             <!-- BEGIN LOGIN FORM -->
             <form class="login-form" action="{{ route('login_data') }}"  method="POST">
-            @honeypot
+          {{--  @honeypot --}}  
+            
                 {!! csrf_field() !!}
                 <h3 class="form-title font-green">{{ trans('admin.login_page') }}</h3>
                 <div class="alert alert-danger {{ session()->has('error')?'':'display-hide' }} ">
