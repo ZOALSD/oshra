@@ -48,7 +48,7 @@
         <!-- BEGIN LOGIN -->
         <div class="content">
             <!-- BEGIN LOGIN FORM -->
-            <form class="login-form"  method="post">
+            <form class="login-form" action="{{ route('login_data') }}"  method="POST">
             @honeypot
                 {!! csrf_field() !!}
                 <h3 class="form-title font-green">{{ trans('admin.login_page') }}</h3>
