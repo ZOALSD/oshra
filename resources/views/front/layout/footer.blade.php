@@ -29,9 +29,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script>
     <!-- ##### Footer Area End ##### -->
 
     <!-- ##### All Javascript Script ##### -->
-    <!-- jQuery-2.2.4 js -->
-    {{--  --}<script src="{{ url('') }}/front/js/jquery/jquery-2.2.4.min.js"></script>{{--  --}}
-    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <!-- jQuery-2.2.4 js Done Delete Jquery CDN -->
+    <script src="{{ url('') }}/front/js/jquery/jquery-2.2.4.min.js"></script>
+
         @stack('js')
     <script src="{{ asset('js/share.js') }}"></script>
     <script src="{{ url('') }}/front/js/load.js"></script>
@@ -47,9 +47,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script>
     <script src="{{ url('') }}/front/js/active.js"></script>
     @yield('js')
     <!-- Google Maps -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwuyLRa1uKNtbgx6xAJVmWy-zADgegA2s"></script>
-    <script src="{{ url('') }}/front/js/google-map/map-active.js"></script>
-
     <script>
          $(document).ready(function(){
                         $('.date-picker').datepicker();
