@@ -113,9 +113,10 @@
 </button>
 </div>
 {!! Form::close() !!}
+ 
+@push('js')
 
-@section('js')
-    
+ 
 <script>
 $("#volunteer-done").hide();//
 $("#name_collaction").hide();
@@ -142,11 +143,8 @@ $("#phone_error").text("");
 $("#Volunteer_qu_error").text("");
 $("#join_us_qu_error").text("");
 $("#cv_file_error").text("");
-$.ajaxSetup({
-    headers: {
-        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-    }
-});
+
+
   $.ajax({
     url:"{{ route('AddVolunteer') }}", 
     type: 'POST',      
@@ -186,6 +184,7 @@ $.ajaxSetup({
    });
 
 </script>
-@endsection
+@endpush
+
 
 @endsection
