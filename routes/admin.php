@@ -1,4 +1,4 @@
- <?php
+<?php
 
 /*
 |--------------------------------------------------------------------------
@@ -24,7 +24,7 @@ Route::group(['prefix' => app('admin'), 'middleware' => 'Lang'], function () {
 		Route::group(['middleware' => 'admin_guest'], function () {
 
 				Route::get('login', 'Admin\AdminAuthenticated@login_page');
-				Route::post('login', 'Admin\AdminAuthenticated@login_post')->name('login_data');
+				Route::post('login', 'Admin\AdminAuthenticated@login_post');
 
 				Route::post('reset/password', 'Admin\AdminAuthenticated@reset_password');
 				Route::get('password/reset/{token}', 'Admin\AdminAuthenticated@reset_password_final');
@@ -42,11 +42,6 @@ Route::group(['prefix' => app('admin'), 'middleware' => 'Lang'], function () {
 		 */
 
 		Route::group(['middleware' => 'admin:admin'], function () {
-
-				Route::group(['prefix' => 'filemanager'], function () {
-						\UniSharp\LaravelFilemanager\Lfm::routes();
-					});
-
 				//////// Admin Routes /* Start */ //////////////
 				Route::get('/', 'Admin\Dashboard@home');
 				Route::any('logout', 'Admin\AdminAuthenticated@logout');
@@ -55,24 +50,8 @@ Route::group(['prefix' => app('admin'), 'middleware' => 'Lang'], function () {
 				Route::post('account', 'Admin\AdminAuthenticated@account_post');
 				Route::resource('settings', 'Admin\Settings');
 
-				Route::resource('causes','Admin\CausesController'); 
-Route::post('causes/multi_delete','Admin\CausesController@multi_delete'); 
-				Route::resource('causestype','Admin\CausesTypeController'); 
-Route::post('causestype/multi_delete','Admin\CausesTypeController@multi_delete'); 
-				Route::resource('about','Admin\AboutController'); 
-Route::post('about/multi_delete','Admin\AboutController@multi_delete'); 
-				Route::resource('blog','Admin\BlogController'); 
-Route::post('blog/multi_delete','Admin\BlogController@multi_delete'); 
-				Route::resource('member','Admin\MemberController'); 
-Route::post('member/multi_delete','Admin\MemberController@multi_delete'); 
-				Route::resource('manger','Admin\MangerController'); 
-Route::post('manger/multi_delete','Admin\MangerController@multi_delete'); 
-
-				Route::resource('volunteerscontoller','Admin\VolunteersContoller'); 
-				Route::post('ViewPdf','Admin\VolunteersContoller@ViewPdf')->name('ViewPdf'); 
-Route::post('volunteerscontoller/multi_delete','Admin\VolunteersContoller@multi_delete'); 
-				Route::resource('message','Admin\MessageController'); 
-Route::post('message/multi_delete','Admin\MessageController@multi_delete'); 
+				Route::resource('addadmin','Admin\AddAdminController'); 
+Route::post('addadmin/multi_delete','Admin\AddAdminController@multi_delete'); 
 				//////// Admin Routes /* End */ //////////////
 			});
 

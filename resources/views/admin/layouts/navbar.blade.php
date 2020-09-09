@@ -18,10 +18,7 @@
                 </div>
                 <!-- END LOGO -->
                 <!-- BEGIN RESPONSIVE MENU TOGGLER -->
-                <a href="javascript:;" 
-                class="menu-toggler responsive-toggler" 
-                data-toggle="collapse" data-target=".navbar-collapse"> 
-            </a>
+                <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> </a>
                 <!-- END RESPONSIVE MENU TOGGLER -->
                 <!-- BEGIN PAGE ACTIONS -->
                 <!-- DOC: Remove "hide" class to enable the page header actions -->
@@ -47,6 +44,7 @@
 
                         <ul class="nav navbar-nav pull-right">
                             <li class="separator hide"> </li>
+
 
 <li class="dropdown dropdown-extended dropdown-notification" id="lang_list">
     <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">

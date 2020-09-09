@@ -142,7 +142,7 @@ class FileUploader extends Controller {
 		if (!empty($ext)) {
 			return 'image|mimes:'.$ext;
 		} else {
-			return 'image|mimes:jpeg,jpg,png,bmp,gif,psd';
+			return 'image|mimes:jpeg,jpg,png,bmp,gif,psd,pdf';
 		}
 	}
 
@@ -150,7 +150,7 @@ class FileUploader extends Controller {
 		if (!empty($ext)) {
 			return 'mimes:'.$ext;
 		} else {
-			return 'mimes:pdf,doc,docx,xls,dot,wbk,docm,dotx,dotm,docb,xlt,xlm,xlsm,xlsx,xltx,xltm,xlsb,xla,xlam,xll,xlw,ppt,pot,pps,pptx,pptm,potx,potm,ppam,ppsx,ppsm,sldx,sldm,pub';
+			return 'mimes:doc,docx,xls,dot,wbk,docm,dotx,dotm,docb,xlt,xlm,xlsm,xlsx,xltx,xltm,xlsb,xla,xlam,xll,xlw,ppt,pot,pps,pptx,pptm,potx,potm,ppam,ppsx,ppsm,sldx,sldm,pub';
 		}
 	}
 

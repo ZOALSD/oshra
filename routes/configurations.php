@@ -33,7 +33,7 @@ if (!function_exists('setting')) {
 	function setting() {
 		$setting = \App\Model\Setting::orderBy('id', 'desc')->first();
 		if (empty($setting)) {
-			return \App\Model\Setting::create(['sitename_ar' => '', 'sitename_en' => '']);
+			return \App\Model\Setting::create(['sitename_ar' => 'اسم المعهد', 'sitename_en' => 'name ']);
 		} else {
 			return $setting;
 		}
@@ -54,7 +54,7 @@ if (!function_exists('active_link')) {
 	function active_link($segment, $class = null) {
 		if ($segment == null and request()->segment(2) == null) {
 			return $class;
-		} elseif (in_array(request()->segment(2), explode('|', $segment))) {
+		} elseif (preg_match('/'.$segment.'/i', request()->segment(2))) {
 			if ($class != null || $class != 'block') {
 				if ($segment != null) {
 					return $class;
@@ -73,23 +73,10 @@ if (!function_exists('active_link')) {
 
 if (!function_exists('l')) {
 	function l($obj) {
-		return $obj.'_'.app('l');
-	}
-}
-
-if (!function_exists('mK')) {
-	function mK($num) {
-		if ($num > 1000) {
-			$x               = round($num);
-			$x_number_format = number_format($x);
-			$x_array         = explode(',', $x_number_format);
-			$x_parts         = array('k', 'm', 'b', 't');
-			$x_count_parts   = count($x_array)-1;
-			$x_display       = $x;
-			$x_display       = $x_array[0].((int) $x_array[1][0] !== 0?'.'.$x_array[1][0]:'');
-			$x_display .= $x_parts[$x_count_parts-1];
-			return $x_display;
+		if (app('l') == 'ar') {
+			return $obj.'_ar';
+		} elseif (app('l') == 'en') {
+			return $obj.'_en';
 		}
-		return $num;
 	}
 }

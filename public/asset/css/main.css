@@ -1,0 +1,275 @@
+body{
+    font-family: 'PT Serif', serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f2f3f4;
+}
+.color{
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    color: #ff0303;
+}
+.f-30{
+    font-size: 30px;
+}.bg-black{
+    background-color: #231f20;
+}
+.mw-650{
+    max-width: 650px;
+    line-height: 2;
+}
+.f-20{
+    font-size: 20px;
+}
+.f-22{
+    font-size: 22px !important;
+}
+.instagram:hover{
+    color: #045680;
+}
+.facebook:hover{
+    color: #3c5a9a;
+}
+.twitter:hover{
+    color: #1eacee    ;
+}
+.youtube:hover{
+    color: #cf391e;
+}
+.whatsapp:hover{
+    color: #45a978;
+}
+.telegram:hover{
+    color: #209bd0;
+}
+input.form-control{
+    height: 42px;
+    border-radius: 0;
+}
+.social-media{
+    text-align: center;
+}
+.social-media a{
+    margin: 5px;
+}
+.mt-20{
+    margin-top: 20px !important;
+}
+.h-black:hover{
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    color: black;
+}
+img.img-thumbnail {
+    filter: grayscale(20%);
+}   
+.btn{
+padding: 8px 30px;
+border-radius:0px !important;
+}
+.bg-blue{
+    background-color: #80c2de!important ;
+}
+.b-red{
+    border-left:1px #ff0303 solid ;
+    padding: 50px;
+}
+a{
+    color: #fff ;
+    text-decoration: none !important
+}
+a:hover{
+    color: #ff0303;
+}
+header ul{
+    list-style: none;
+}
+header ul.links-top{
+
+    list-style: none;
+    display: inline-flex;
+}
+
+header ul.links-top li {
+    margin: 10px 15px 0 15px;
+}
+
+header .Done-top{
+    background-color: #ff0303;
+    padding: 12px 36px;
+
+}
+header .Done-top a{
+    text-align: center;
+    line-height: 3;
+    color: #fff;
+}
+
+
+header ul.links-top li a.search{
+    margin-right: -14px;
+    background-color: #cacaca;
+    padding: 13px 20px;
+    border-right: 1px #f34400 solid;
+
+}
+
+.main-links-postion {
+    position: fixed;
+    right:87px;
+    left: 5.7%;
+    z-index: 999;
+}
+
+p.main-p {
+    font-size: 44px;
+    color: #fff;
+    margin-top:40px;
+}
+
+    @media only screen and (min-width: 0) and (max-width: 992px) { 
+
+    p.main-p {
+        font-size: 33px;
+    }
+    .top_nav{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 480px)
+{
+    p.main-p {
+        font-size: 24px;
+    } 
+}
+li.nav-item {
+  
+    margin-left: 40px;
+}
+/**main link start-------------------*/
+
+.main-links{
+        background-color: #ffffff75;
+}
+.main-links table{
+    width: 100%;
+}
+
+.main-links table tr td{
+    background-color: #000000;
+    font-size: 30px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.main-links table tr td:not(:last-child){
+    border-right: 1px solid #ff0303;
+}
+.main-links table tr td:hover{
+background-color:#cacaca;
+
+}
+
+
+.main-links table tr td a:hover{
+ 
+    color: #000000;
+}
+
+.logo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+td.logo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+td.logo a:hover{
+opacity: 0.5;
+}
+
+
+p.sub-p{
+    font-size: 20px;
+    color: #fff;
+}
+.btn-outline-danger {
+    color: #ff0303;
+    border-color: #ff0303;
+}
+
+
+.btn-outline-danger:hover {
+    color: #fff;
+    background-color: #ff0303;
+    border-color: #ff0303;
+  }
+
+  i.fas.fa-arrow-right.arrow-artical {
+    margin: 30px 20px 0 10px;
+}
+
+/**contact us**/
+.contact-us{    
+background-image:url("../image/newsletter-phone.png");
+background-position: 920px;
+background-repeat: no-repeat;
+} 
+
+.logo-footer{
+    text-align: center;
+    background-image: url('../image/logo.png');
+     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+footer{
+    line-height:2;
+}
+
+/*Edit bootstrap navbar ==============start------------------- */
+
+a.navbar-brand {
+    font-size: 30px;
+    padding-right: 40px;
+    border-right: 1px solid #f34400;
+    color: rgb(255 255 255) !important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link{
+    color: rgb(255 255 255 / 1);
+    font-size: 30px;
+    padding-right: 50px;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: rgb(255 255 255 / 1);
+    font-size: 30px;
+    padding-right: 50px;
+   
+}
+
+
+.navbar-light .navbar-nav .nav-link.red{
+    border-right: 1px solid #ff0303;
+   
+   
+}
+
+    
+@media only screen and (min-width: 992px) /*992px*/
+{
+    
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 73px;
+    left: 73px;
+    z-index: 1030;
+}
+}
+
+/*Edit bootstrap navbar ==============End ------------------- */

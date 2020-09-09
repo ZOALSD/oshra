@@ -11,11 +11,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
-          //  AdminDataInfo::class,
-         //   AboutTable::class,
-         //   Causes::class,
-         // BlogSeeder::class
-            OurMemberSeeder::class
+            AdminDataInfo::class,
         ]);
     }
 }

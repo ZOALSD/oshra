@@ -29,12 +29,12 @@ return [
     'allowed_methods' => ['*'],
 
     /*
-     * Matches the request origin. `[*]` allows all origins. Wildcards can be used, eg `*.mydomain.com`
+     * Matches the request origin. `[*]` allows all origins.
      */
     'allowed_origins' => ['*'],
 
     /*
-     * Patterns that can be used with `preg_match` to match the origin.
+     * Matches the request origin with, similar to `Request::is()`
      */
     'allowed_origins_patterns' => [],
 

@@ -13,10 +13,8 @@ class AdminDataInfo extends Seeder
     {
         return \App\Admin::create([
             'name'     => 'admin',
-            'email'    => 'A7med2soft@gmail.com',
+            'email'    => 'test@test.com',
             'password' => bcrypt(123456),
         ]);
-      //  factory('App\Admin', 10)->create();
-
     }
 }

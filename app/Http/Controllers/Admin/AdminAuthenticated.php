@@ -15,7 +15,6 @@ class AdminAuthenticated extends Controller {
 	}
 
 	public function login_post() {
-		//return request()->all();
 		$rememberme = request('rememberme') == 1?true:false;
 		if (admin()->attempt(['email' => request('email'), 'password' => request('password')], $rememberme)) {
 			return redirect(aurl(''));

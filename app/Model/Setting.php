@@ -9,12 +9,22 @@ class Setting extends Model {
 	protected $fillable = [
 		'sitename_ar',
 		'sitename_en',
-		'sitename_fr',
 		'email',
 		'logo',
 		'icon',
+		'place_ar',
+		'place_en',
+		'facebook',
+		'twitter',
+		'instgram',
+		'youtube',
+		'phone1',
+		'phone2',
+		'word_ar',
+		'word_en',
 		'system_status',
 		'system_message',
 	];
 
+	
 }

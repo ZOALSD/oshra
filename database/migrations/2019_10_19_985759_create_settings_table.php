@@ -20,6 +20,16 @@ class CreateSettingsTable extends Migration
             $table->string('email')->nullable();
             $table->string('logo')->nullable();
             $table->string('icon')->nullable();
+            $table->string('place_ar')->nullable();
+            $table->string('place_en')->nullable();
+            $table->string('facebook')->nullable();
+            $table->string('twitter')->nullable();
+            $table->string('instgram')->nullable();
+            $table->string('youtube')->nullable();
+            $table->integer('phone1')->nullable();
+            $table->integer('phone2')->nullable();
+            $table->string('word_ar')->nullable();//
+            $table->string('word_en')->nullable();//
             $table->enum('system_status', ['open', 'close'])->default('open');
             $table->longtext('system_message')->nullable();
             $table->timestamps();

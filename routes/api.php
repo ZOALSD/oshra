@@ -13,16 +13,7 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-//google validation catchar================//
-
-Route::post('AddVolunteers','Api\VolunteersContollerApi@store')->name('AddVolunteer');
-Route::post('message','Api\MessageControllerApi@store')->name('message');
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
-
-
-
-
-
 });
